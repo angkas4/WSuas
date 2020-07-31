@@ -10,7 +10,6 @@ class UnewsController extends Controller
 
 	public function index(){
 
-
     //mengambil data pada database unews
     $unews = Unews::all();
 
@@ -18,13 +17,13 @@ class UnewsController extends Controller
     //return Unews::all();
     return view('unews',['unews' => $unews]);
     
-    }
+    } 
 
     public  function read (){
     	return Unews::all();
     }
 
-    public function create(request $req){
+    public function insert(request $req){
     	$u = new Unews;
     	$u->judul = $req->judul;
     	$u->gambar = $req->gambar;

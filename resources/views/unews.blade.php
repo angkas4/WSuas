@@ -81,7 +81,7 @@
             </p>
           <p class="post-meta">Posted by
             Reporter Unews
-            on {{ $u->posted}}</p>
+            on {{ $u->updated_at}}</p>
         </div>
         <hr>
          @endforeach

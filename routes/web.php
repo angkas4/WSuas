@@ -12,8 +12,8 @@
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+//     return view('unew');
 // });
-Route::get('/','UnewsController@index');
+ Route::get('/','UnewsController@index');
 
 

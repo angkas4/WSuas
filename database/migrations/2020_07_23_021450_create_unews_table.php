@@ -20,7 +20,8 @@ class CreateUnewsTable extends Migration
             $table->string('judul');
             $table->string('gambar');
             $table->string('isi', 5000);
-            $table->timestamp('posted')->useCurrent();;
+             $table->timestamp('created_at')->useCurrent();
+             $table->timestamp('updated_at')->useCurrent();;
         });
     }
 

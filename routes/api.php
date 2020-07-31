@@ -18,6 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('unews','UnewsController@read');
-Route::post('unews','UnewsController@create');
+Route::post('/unews','UnewsController@insert');
 Route::put('unews/{id}','UnewsController@update');
 Route::delete('unews/{id}','UnewsController@delete');
